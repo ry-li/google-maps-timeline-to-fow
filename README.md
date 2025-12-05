@@ -14,6 +14,12 @@ This script converts the exported **Google Maps Timeline** data (*location-histo
 
 All data from the Google Maps Timeline location history, including paths, **will be extracted to points** due to the inaccuracy of the timeline paths: the paths simply connect the recorded points, so the lines often jump across buildings instead of being drawn along the roads.
 
+**❌** If import **paths** to FoW:
+![FoW Paths](pics/paths.PNG "FoW Paths")
+
+**✅ SOLUTION:** import extracted **points**:
+![Sample FoW](pics/points.PNG "Sample FoW")
+
 **To restore paths:** Connect points manually in the app: *Settings → Database → Track Editor* (*or long-pressing the map menu icon*). Optional: Use the generated interactive map ***timeline-map.html*** as a reference.
 
 ## **Original Data:**
@@ -43,8 +49,8 @@ Google Maps Timeline data has four categories:
 | ***activity*** | start time if is the start point; end time if is the end point | is start or end point | start |
 | ***timelinePath*** | calculated timestamp of this point | minutes offset from path start time (in whole hours) | 2013-05-03 18:00 + 74' |
 
-# **Preview:**
-![Sample Map](preview-pics/map.png "Sample Map")
+**Interactive map preview** (sample data):
+![Sample Map](pics/map.png "Sample Map")
 
 
 # **Before Runing the Script:**
