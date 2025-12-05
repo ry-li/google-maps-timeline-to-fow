@@ -51,7 +51,10 @@ Google Maps Timeline data has four categories:
 | ***activity*** | start time if is the start point; end time if is the end point | is start or end point | start |
 | ***timelinePath*** | calculated timestamp of this point | minutes offset from path start time (in whole hours) | 2013-05-03 18:00 + 74' |
 
-**Interactive map preview** (sample data):
+### **Interactive Map Preview:**
+Sample map *output/timeline-map.html* generated using sample data<br>
+https://r-li.com/google-maps-timeline-to-fow
+
 ![Sample Map](pics/map.png "Sample Map")
 
 
