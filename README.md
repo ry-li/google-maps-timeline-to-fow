@@ -1,16 +1,16 @@
 # google-maps-timeline-to-fow
-|||
+| File / Folder | About |
 | --- | --- |
 | ***google-maps-timeline-to-fow.ipynb*** | the script
 | ***location-history.json*** | sample data - replace with your own
-| ***output*** | sample output using the sample data
+| ***output*** | the output folder with sample output files using the sample data
 
 
-# **Google Maps Timeline to Fog of World Converter**
+## **Google Maps Timeline to Fog of World Converter**
 
 This script converts the exported **Google Maps Timeline** data (*location-history.json*) into a **GPX file of location points** to be imported to **Fog of World**.
 
-## **Why Points:**
+### **Why Points:**
 
 All data from the Google Maps Timeline location history, including paths, **will be extracted to points** due to the inaccuracy of the timeline paths: the paths simply connect the recorded points, so the lines often jump across buildings instead of being drawn along the roads.
 
@@ -20,9 +20,11 @@ All data from the Google Maps Timeline location history, including paths, **will
 **✅ SOLUTION:** import extracted **points**:
 ![Sample FoW](pics/points.PNG "Sample FoW")
 
-**To restore paths:** Connect points manually in the app: *Settings → Database → Track Editor* (*or long-pressing the map menu icon*). Optional: Use the generated interactive map ***timeline-map.html*** as a reference.
+**To restore paths:**<br>
+Connect points manually in the app: *Settings → Database → Track Editor* (*or long-pressing the map menu icon*).<br>
+**Optional:** Use the generated interactive map ***timeline-map.html*** or the [Google Maps Timeline Viewer](https://github.com/ry-li/google-maps-timeline-viewer) as a reference.
 
-## **Original Data:**
+### **Original Data:**
 Google Maps Timeline data has four categories:
 
 | Category | Geo Data | For |
@@ -34,7 +36,7 @@ Google Maps Timeline data has four categories:
 
 † *timelineMemory* will be discarded
 
-## **Output Files:**
+### **Output Files:**
 1. ***timeline.gpx*** → GPX tracks†† to be imported to Fog of World
 2. ***timeline.csv*** → CSV table of all extracted points with time††† (in UTC), coordinates, category, and notes†††
 3. ***timeline-map.html*** → an interactive Plotly map
@@ -53,5 +55,5 @@ Google Maps Timeline data has four categories:
 ![Sample Map](pics/map.png "Sample Map")
 
 
-# **Before Runing the Script:**
+## **Before Runing the Script:**
 ### Replace the sample *location-history.json* file with your own. Make sure the *location-history.json* file and the *google-maps-timeline-to-fow.ipynb* file are in the same directory.
